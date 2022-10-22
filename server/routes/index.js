@@ -10,6 +10,7 @@ router.post('/api/email', async(req, res, next)  =>{
   var company = req.body.company;
   var email = req.body.email;
   var message = req.body.message;
+  console.log(process.env.EMAIL)
  
 var transporter = nodemailer.createTransport({
   service: 'gmail',
