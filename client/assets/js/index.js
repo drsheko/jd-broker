@@ -9,7 +9,7 @@ const submitForm = async (e) => {
   var company = document.querySelector("#company");
   var message = document.querySelector("#message");
   try {
-    var url = "http://localhost:3000/";
+    var url = "https://jd-broker-admin.onrender.com/";
     var res = await fetch(`${url}api/email`, {
       method: "POST",
       headers: {

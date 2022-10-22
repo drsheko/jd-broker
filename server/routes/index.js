@@ -10,21 +10,16 @@ router.post('/api/email', async(req, res, next)  =>{
   var company = req.body.company;
   var email = req.body.email;
   var message = req.body.message;
-  
-  console.log(process.env.EMAIL)
-  console.log(process.env.PASSWORD)
-  console.log(req.body)
-
-
+ 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user:process.env.EMAIL,
-    pass: 'udsamfraigjzavfd'
+    pass: process.env.PASSWORD
   }
 });
 
-var mailOptions = {
+var mailToAdmin = {
   from: process.env.EMAIL,
   to: process.env.MAINEMAIL,
   subject: 'J&D Client',
@@ -34,7 +29,7 @@ var mailOptions = {
           Message : ${message}`
 };
 
-transporter.sendMail(mailOptions, function(error, info){
+transporter.sendMail(mailToAdmin, function(error, info){
   if (error) {
      return res.status(500).json({success:false, error})
   } else {
