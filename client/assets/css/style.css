@@ -949,9 +949,6 @@ footer p {
   color: #fff;
 }
 
-footer ul.social-icons {
-  
-}
 
 footer ul.social-icons li {
   display: inline-block;
@@ -1018,21 +1015,6 @@ footer .contact-form input:focus {
   background-color: #343434;
 }
 
-footer .contact-form textarea {
-  border-radius: 20px;
-  height: 120px;
-  max-height: 200px;
-  min-height: 120px;
-  display: inline-block;
-  padding: 15px;
-  color: #aaa !important;
-  background-color: #343434;
-  font-size: 13px;
-  text-transform: none;
-  box-shadow: none;
-  border: none;
-  margin-bottom: 15px;
-}
 
 footer .contact-form textarea:focus {
   outline: none;
