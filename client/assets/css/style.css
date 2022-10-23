@@ -400,13 +400,13 @@ header .navbar {
 .Modern-Slider .NextArrow {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 15px;
   border: 0 none;
   background-color: transparent;
   text-align: center;
   font-size: 36px;
   font-family: "FontAwesome";
-  color: #fff;
+  color:#a4c639;
   z-index: 5;
   outline: none;
   cursor: pointer;
@@ -419,13 +419,13 @@ header .navbar {
 .Modern-Slider .PrevArrow {
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 15px;
   border: 0 none;
   background-color: transparent;
   text-align: center;
   font-size: 36px;
   font-family: "FontAwesome";
-  color: #fff;
+  color:#a4c639;
   z-index: 5;
   outline: none;
   cursor: pointer;
