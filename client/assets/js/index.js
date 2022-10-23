@@ -3,7 +3,8 @@ var form =document.querySelector('.myForm')
 var modal =document.querySelector('.modal')
 const submitForm = async (e) => {
     e.preventDefault()
-  e.stopImmediatePropagation()
+  e.stopImmediatePropagation();
+  form.focus()
   var fullName = document.querySelector("#form-name");
   var email = document.getElementById("email");
   var company = document.querySelector("#company");
