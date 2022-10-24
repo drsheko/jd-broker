@@ -9,7 +9,7 @@ const submitForm = async (e) => {
   var company = document.querySelector("#company");
   var message = document.querySelector("#message");
  
-  try {
+  try {$('#modal-spinner').modal('show')
     var url = "https://jd-broker-admin.onrender.com/";
     var res = await fetch(`${url}api/email`, {
       method: "POST",
@@ -23,6 +23,7 @@ const submitForm = async (e) => {
         message: message.value,
       }),
     });
+    $('#modal-spinner').modal('hide')
     $('#exampleModalCentered').modal('show')
     var data = await res.json()
     console.log(data);
