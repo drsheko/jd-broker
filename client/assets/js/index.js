@@ -8,7 +8,7 @@ const submitForm = async (e) => {
   var email = document.getElementById("email");
   var company = document.querySelector("#company");
   var message = document.querySelector("#message");
-  $('#exampleModalCentered').modal('show')
+ 
   try {
     var url = "https://jd-broker-admin.onrender.com/";
     var res = await fetch(`${url}api/email`, {
@@ -23,8 +23,9 @@ const submitForm = async (e) => {
         message: message.value,
       }),
     });
+    $('#exampleModalCentered').modal('show')
     var data = await res.json()
-    
+    console.log(data);
    
   } catch (error) {
    
