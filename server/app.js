@@ -22,13 +22,6 @@ var mailOptions = {
   text: 'That was easy!'
 };
 
-/*transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-  }
-});*/
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
